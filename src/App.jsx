@@ -36,6 +36,9 @@ function App() {
     localStorage.setItem('favourites', JSON.stringify(favourites))
   }, [favourites])
 
+  // klicka på orden för att förklara dem, typ wiki
+  const baseUrl = 'https://sv.wikipedia.org/wiki/'
+
   return (
     <div className='flow'>
       <h1>{userName}</h1>
